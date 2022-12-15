@@ -1,0 +1,123 @@
+body{
+  margin: 0;
+  background-image: url(background.jpg);
+  width: 1856px;
+  height: 950px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav{
+  margin: 0px 10px 10px 0px;
+  white-space: nowrap;
+  text-align: center;
+}
+.nav .title{
+  font-size: 80px;
+  display: inline;
+  background-color: black;
+}
+.nav a{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+/* input[id="menuicon"]{
+  display: none;
+}
+input[id="menuicon"] + label{
+  display:inline-block;
+  width:60px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+}
+input[id="menuicon"] + label span{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  border-radius: 30px;
+  background:#000;
+  transition: all .35s;
+}
+input[id="menuicon"] + label span:nth-child(1){
+  top:0;
+}
+input[id="menuicon"] + label span:nth-child(2){
+  top:50%;
+  transform: translateY(-50%);
+}
+input[id="menuicon"] + label span:nth-child(3){
+  bottom:0;
+} */
+
+.Dairycows img{
+  position: absolute;
+  width: 500px;
+  animation-name: x-run;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.runHorses img{
+  position: absolute;
+  width: 800px;
+  transform: translate(1050px,76px);
+  animation-name: y-run;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.horse img{
+  position: absolute;
+  width: 700px;
+  height: 500px;
+  animation: 4s infinite spinner;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+.Browncows img{
+  position: absolute;
+  width: 700px;
+  height: 540px;
+  animation: 6s infinite walking;
+  animation-direction: alternate;
+}
+
+@keyframes x-run {
+  from{
+    left: 0px;
+    }
+  to{
+    left: 300px;
+  }
+}
+@keyframes y-run {
+  from{ 
+    top: 0px;
+  }
+  to{
+    top:200px;
+  }
+}
+@keyframes spinner {
+  0% {
+    transform: translate3d(10%, 35%, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(10%, 35%, 0) rotate(360deg);
+  }
+}
+
+@keyframes walking {
+  from{
+    bottom: 0px;
+    left: 0px;
+  }
+  to{
+    bottom: 500px;
+    left: 1100px;
+  }
+}
