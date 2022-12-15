@@ -1,0 +1,16 @@
+li{
+  list-style: none;
+  float: left;
+  padding: 0 15px;
+}
+
+li::after{
+  content: "l";
+  float: right;
+  color: #ccc;
+  margin-right: -17px;
+}
+
+li:last-child::after{
+  content: "";
+}
