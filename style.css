@@ -2,19 +2,20 @@ body{
   margin: 0;
   background-image: url(background.jpg);
   width: 1856px;
-  height: 950px;
+  height: 1050px;
 }
-.nav{
+#nav{
   margin: 0px 10px 10px 0px;
   white-space: nowrap;
   text-align: center;
 }
-.nav .title{
+#nav .title{
   font-size: 80px;
   display: inline;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow:7px 6px black;
 }
-.nav a{
+#nav a{
   text-decoration: none;
   color: rgb(255, 251, 0);
 }
@@ -47,7 +48,8 @@ input[id="menuicon"] + label span:nth-child(2){
 }
 input[id="menuicon"] + label span:nth-child(3){
   bottom:0;
-} */
+} */ /*메뉴 버튼 */
+
 
 .Dairycows img{
   position: absolute;
@@ -61,13 +63,15 @@ input[id="menuicon"] + label span:nth-child(3){
 
 .runHorses img{
   position: absolute;
-  width: 800px;
-  transform: translate(1050px,76px);
+  width: 600px;
+  transform: translate(1150px,76px);
   animation-name: y-run;
-  animation-duration: 5s;
+  animation-duration: 2.5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
+  z-index: 0;
+
 }
 .horse img{
   position: absolute;
@@ -76,6 +80,8 @@ input[id="menuicon"] + label span:nth-child(3){
   animation: 4s infinite spinner;
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
+  z-index: 1;
+
 }
 .Browncows img{
   position: absolute;
@@ -84,7 +90,13 @@ input[id="menuicon"] + label span:nth-child(3){
   animation: 6s infinite walking;
   animation-direction: alternate;
 }
-
+.cow img{
+  width: 1200px;
+  height: 800px;
+  position: absolute;
+  transform: translate(400px,30px);
+  z-index: -1;
+}
 @keyframes x-run {
   from{
     left: 0px;
@@ -96,19 +108,19 @@ input[id="menuicon"] + label span:nth-child(3){
 
 @keyframes y-run {
   from{ 
-    top: 0px;
+    top: 0%;
   }
   to{
-    top:200px;
+    top:30%;
   }
 }
 
 @keyframes spinner {
   0% {
-    transform: translate3d(10%, 35%, 0) rotate(0deg);
+    transform: translate3d(10%, 33%, 0) rotate(0deg);
   }
   100% {
-    transform: translate3d(10%, 35%, 0) rotate(360deg);
+    transform: translate3d(10%, 33%, 0) rotate(360deg);
   }
 }
 
