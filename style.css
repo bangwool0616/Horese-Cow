@@ -53,19 +53,20 @@ input[id="menuicon"] + label span:nth-child(3){
 
 .Dairycows img{
   position: absolute;
-  width: 500px;
-  animation-name: x-run;
+  width: 650px;
+  animation-name: cowy-run;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
+  transform: translate(185%);
 }
 
 .runHorses img{
   position: absolute;
   width: 600px;
   transform: translate(1150px,76px);
-  animation-name: y-run;
+  animation-name: horseY-run;
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -76,7 +77,7 @@ input[id="menuicon"] + label span:nth-child(3){
 .horse img{
   position: absolute;
   width: 700px;
-  height: 500px;
+  height: 700px;
   animation: 4s infinite spinner;
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
@@ -103,16 +104,16 @@ input[id="menuicon"] + label span:nth-child(3){
   animation-timing-function: ease-in-out;
 }
 
-@keyframes x-run {
+@keyframes cowy-run {
   from{
-    left: 0px;
+    margin-top: 0%;
     }
   to{
-    left: 300px;
+    margin-top: 20%;
   }
 }
 
-@keyframes y-run {
+@keyframes horseY-run {
   from{ 
     top: 0%;
   }
@@ -123,21 +124,21 @@ input[id="menuicon"] + label span:nth-child(3){
 
 @keyframes spinner {
   0% {
-    transform: translate3d(10%, 33%, 0) rotate(0deg);
+    transform: translate3d(10%, -5%, 0) rotate(0deg);
   }
   100% {
-    transform: translate3d(10%, 33%, 0) rotate(360deg);
+    transform: translate3d(10%, 15%, 0) rotate(360deg);
   }
 }
 
 @keyframes walking {
   from{
-    bottom: 0px;
-    left: 0px;
+    bottom: 0%;
+    left: 0%;
   }
   to{
-    bottom: 500px;
-    left: 1100px;
+    bottom: 50%;
+    left: 60%;
   }
 }
 
